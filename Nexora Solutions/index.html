@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nexora Solutions | Premium Web Development</title>
     
+    <!-- Favicon (Browser Tab Icon) -->
+    <link rel="icon" type="image/png" href="logocropped.png">
+    
     <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Tailwind CSS (Loaded via CDN for easy single-file setup) -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Tailwind Configuration -->
@@ -49,20 +52,22 @@
             <!-- Desktop Menu -->
             <nav class="hidden md:flex items-center gap-8 font-medium text-sm">
                 <a href="#services" class="text-slate-600 hover:text-brand-600 transition-colors">Services</a>
-                <a href="#work" class="text-slate-600 hover:text-brand-600 transition-colors">Recent Work</a>
-                <a href="#contact" class="bg-brand-600 text-white px-5 py-2.5 rounded-full hover:bg-brand-700 hover:shadow-lg hover:shadow-brand-500/30 transition-all transform hover:-translate-y-0.5">Let's Talk</a>
+                <a href="#work" class="text-slate-600 hover:text-brand-600 transition-colors">Our Work</a>
+                <a href="#about" class="text-slate-600 hover:text-brand-600 transition-colors">About Us</a>
+                <a href="#contact" class="bg-brand-600 text-white px-6 py-2.5 rounded-full hover:bg-brand-700 hover:shadow-lg hover:shadow-brand-500/30 transition-all transform hover:-translate-y-0.5 font-semibold">Let's Talk</a>
             </nav>
 
             <!-- Mobile Menu Button -->
-            <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600">
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 hover:text-brand-600 transition-colors">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
             </button>
         </div>
 
-        <!-- Mobile Menu Dropdown (Hidden by default) -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-4 flex flex-col gap-4 shadow-xl">
-            <a href="#services" class="text-slate-600 font-medium">Services</a>
-            <a href="#work" class="text-slate-600 font-medium">Recent Work</a>
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-4 flex flex-col gap-4 shadow-xl absolute w-full left-0 top-20">
+            <a href="#services" class="text-slate-600 font-medium hover:text-brand-600">Services</a>
+            <a href="#work" class="text-slate-600 font-medium hover:text-brand-600">Our Work</a>
+            <a href="#about" class="text-slate-600 font-medium hover:text-brand-600">About Us</a>
             <a href="#contact" class="text-brand-600 font-bold">Let's Talk</a>
         </div>
     </header>
@@ -70,22 +75,23 @@
     <!-- Hero Section -->
     <section class="pt-40 pb-20 px-6 lg:pt-48 lg:pb-32 overflow-hidden relative">
         <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-brand-100 opacity-50 blur-3xl -z-10"></div>
-        <div class="absolute bottom-0 left-0 -ml-20 w-72 h-72 rounded-full bg-blue-100 opacity-50 blur-3xl -z-10"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 w-72 h-72 rounded-full bg-cyan-100 opacity-50 blur-3xl -z-10"></div>
 
         <div class="max-w-4xl mx-auto text-center">
-            <div class="inline-block mb-4 px-3 py-1 rounded-full bg-brand-50 border border-brand-100 text-brand-600 text-sm font-semibold tracking-wide">
+            <div class="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-brand-50 border border-brand-100 text-brand-600 text-sm font-semibold tracking-wide">
+                <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
                 Available for new projects in Malaysia
             </div>
             <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 tracking-tight leading-[1.1] mb-8">
                 We build websites that <br class="hidden md:block" />
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-blue-400">drive real results.</span>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-cyan-500">drive real results.</span>
             </h1>
             <p class="text-lg md:text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
                 Nexora Solutions specializes in high-performance, custom web development for businesses that want to stand out, capture leads, and grow online.
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="#work" class="w-full sm:w-auto px-8 py-4 bg-slate-900 text-white rounded-full font-medium hover:bg-slate-800 hover:shadow-xl transition-all transform hover:-translate-y-1">View Our Work</a>
-                <a href="#contact" class="w-full sm:w-auto px-8 py-4 bg-white text-slate-900 rounded-full font-medium border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all">Get in Touch</a>
+                <a href="#work" class="w-full sm:w-auto px-8 py-4 bg-slate-900 text-white rounded-full font-semibold hover:bg-slate-800 hover:shadow-xl transition-all transform hover:-translate-y-1">View Our Work</a>
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 bg-white text-slate-900 rounded-full font-semibold border border-slate-200 hover:border-slate-300 hover:bg-slate-50 transition-all">Get in Touch</a>
             </div>
         </div>
     </section>
@@ -95,13 +101,13 @@
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Everything you need to succeed online</h2>
-                <p class="text-slate-600 max-w-2xl mx-auto">We don't just build websites; we build digital storefronts optimized for speed, design, and user conversion.</p>
+                <p class="text-slate-600 max-w-2xl mx-auto text-lg">We don't just build websites; we build digital storefronts optimized for speed, design, and user conversion.</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Service 1 -->
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl hover:shadow-brand-500/5 transition-all group">
-                    <div class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                         <svg class="w-7 h-7 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Custom Web Design</h3>
@@ -109,8 +115,8 @@
                 </div>
 
                 <!-- Service 2 -->
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl hover:shadow-brand-500/5 transition-all group">
-                    <div class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                         <svg class="w-7 h-7 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">E-Commerce Setup</h3>
@@ -118,8 +124,8 @@
                 </div>
 
                 <!-- Service 3 -->
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl hover:shadow-brand-500/5 transition-all group">
-                    <div class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl hover:shadow-brand-500/10 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                         <svg class="w-7 h-7 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Maintenance & Hosting</h3>
@@ -134,23 +140,23 @@
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-12">
                 <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Selected Work & Case Studies</h2>
-                <p class="text-slate-600 max-w-xl mx-auto">A collection of recent projects built to elevate local brands and improve their digital operations.</p>
+                <p class="text-slate-600 max-w-xl mx-auto text-lg">A collection of recent projects built to elevate local brands and improve their digital operations.</p>
             </div>
 
-            <div class="max-w-4xl mx-auto bg-white rounded-3xl p-10 md:p-16 text-center border border-slate-200 shadow-sm relative overflow-hidden">
+            <div class="max-w-4xl mx-auto bg-white rounded-3xl p-10 md:p-16 text-center border border-slate-200 shadow-xl shadow-slate-200/50 relative overflow-hidden">
                 <!-- Decorative subtle background -->
-                <div class="absolute top-0 right-0 w-32 h-32 bg-slate-50 rounded-full -mr-10 -mt-10"></div>
-                <div class="absolute bottom-0 left-0 w-32 h-32 bg-slate-50 rounded-full -ml-10 -mb-10"></div>
+                <div class="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-brand-50 to-cyan-50 rounded-full -mr-10 -mt-10 blur-2xl"></div>
+                <div class="absolute bottom-0 left-0 w-40 h-40 bg-gradient-to-tr from-brand-50 to-blue-50 rounded-full -ml-10 -mb-10 blur-2xl"></div>
                 
                 <div class="relative z-10">
                     <div class="w-16 h-16 bg-brand-50 text-brand-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
                     </div>
                     <h3 class="text-2xl md:text-3xl font-bold text-slate-900 mb-4">Portfolio Available Upon Request</h3>
-                    <p class="text-slate-600 mb-8 max-w-xl mx-auto text-lg">
+                    <p class="text-slate-600 mb-8 max-w-xl mx-auto text-lg leading-relaxed">
                         To protect the privacy of our clients' custom systems and business data, we share detailed live links and case studies directly during our chat. Want to see what we can build for you?
                     </p>
-                    <a href="https://wa.me/60182369616?text=Hi%20Azhar,%20I'd%20like%20to%20see%20some%20of%20your%20past%20web%20development%20projects." target="_blank" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#25D366] hover:bg-[#128C7E] text-white rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-lg shadow-[#25D366]/30">
+                    <a href="https://wa.me/60182369616?text=Hi%20Nexora,%20I'd%20like%20to%20see%20some%20of%20your%20past%20web%20development%20projects." target="_blank" class="inline-flex items-center justify-center gap-3 px-8 py-4 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full font-bold text-lg transition-all transform hover:-translate-y-1 shadow-lg shadow-[#25D366]/30">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
                         Request Portfolio via WhatsApp
                     </a>
@@ -159,34 +165,81 @@
         </div>
     </section>
 
+    <!-- Meet the Founder / CEO Section -->
+    <section id="about" class="py-24 bg-white px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
+            <!-- CEO Image Placeholder -->
+            <div class="w-full md:w-5/12 relative group">
+                <div class="absolute -inset-4 bg-gradient-to-r from-brand-100 to-cyan-100 rounded-3xl transform rotate-3 transition-transform group-hover:rotate-6 -z-10"></div>
+                <!-- Note: Replace this placeholder image with a real professional photo of yourself -->
+                <img src="C:\Users\rahza\Desktop\Nexora Solutions\ceo.jpg" alt="Azhar Idris - CEO of Nexora Solutions" class="rounded-2xl shadow-xl w-full object-cover aspect-[4/5] border border-slate-100">
+            </div>
+            
+            <!-- CEO Bio & Details -->
+            <div class="w-full md:w-7/12">
+                <div class="inline-flex items-center gap-2 mb-4 px-3 py-1 rounded-full bg-slate-100 text-slate-600 text-sm font-semibold tracking-wide uppercase">
+                    Leadership
+                </div>
+                <h2 class="text-3xl md:text-5xl font-bold text-slate-900 mb-4">Meet the Founder</h2>
+                <h3 class="text-xl md:text-2xl text-brand-600 font-semibold mb-6 flex flex-col sm:flex-row sm:items-center gap-2">
+                    Azhar Idris 
+                    <span class="hidden sm:inline text-slate-300">|</span> 
+                    <span class="text-slate-500 font-medium text-lg">CEO & Lead Developer</span>
+                </h3>
+                
+                <p class="text-slate-600 text-lg mb-6 leading-relaxed">
+                    With a deep background in structured programming and modern web technologies, I founded Nexora Solutions to help businesses bridge the gap between their offline excellence and their digital presence.
+                </p>
+                <p class="text-slate-600 text-lg mb-10 leading-relaxed">
+                    Our philosophy is simple: a website shouldn't just be a digital brochure. It should be a high-performing asset that captures leads, drives sales, and builds absolute trust with your audience. We engineer solutions that actually work for your bottom line.
+                </p>
+                
+                <!-- Social Links -->
+                <div class="flex flex-wrap gap-4">
+                    <!-- Instagram -->
+                    <a href="https://instagram.com/_.xzhxr._" target="_blank" class="flex items-center gap-2 px-6 py-3 bg-white hover:bg-slate-50 border border-slate-200 rounded-full text-slate-700 font-semibold transition-all hover:shadow-md hover:border-slate-300">
+                        <svg class="w-5 h-5 text-pink-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        @_.xzhxr._
+                    </a>
+                    
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/share/1GfeAZj6SK/" target="_blank" class="flex items-center gap-2 px-6 py-3 bg-white hover:bg-slate-50 border border-slate-200 rounded-full text-slate-700 font-semibold transition-all hover:shadow-md hover:border-slate-300">
+                        <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        Facebook Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Call to Action / Contact -->
-    <section id="contact" class="py-24 px-6">
+    <section id="contact" class="py-24 px-6 bg-slate-50">
         <div class="max-w-4xl mx-auto bg-slate-900 rounded-3xl p-10 md:p-16 text-center text-white shadow-2xl relative overflow-hidden">
-            <div class="absolute top-0 right-0 w-64 h-64 bg-brand-500 rounded-full blur-3xl opacity-20 -mr-20 -mt-20"></div>
-            <div class="absolute bottom-0 left-0 w-64 h-64 bg-blue-500 rounded-full blur-3xl opacity-20 -ml-20 -mb-20"></div>
+            <div class="absolute top-0 right-0 w-80 h-80 bg-brand-500 rounded-full blur-3xl opacity-20 -mr-20 -mt-20"></div>
+            <div class="absolute bottom-0 left-0 w-80 h-80 bg-cyan-500 rounded-full blur-3xl opacity-20 -ml-20 -mb-20"></div>
             
             <div class="relative z-10">
                 <h2 class="text-3xl md:text-5xl font-bold mb-6">Ready to upgrade your business?</h2>
                 <p class="text-slate-300 text-lg md:text-xl mb-10 max-w-2xl mx-auto">
                     Stop losing customers to competitors with better websites. Let's build a digital presence that actually works for you.
                 </p>
-                <div class="flex flex-col sm:flex-row justify-center gap-4">
-                    
+                
+                <!-- Buttons Container -->
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
                     <!-- WhatsApp Button -->
-                    <a href="https://wa.me/60182369616?text=Hi%20Azhar,%20I'm%20interested%20in%20building%20a%20website%20for%20my%20business." target="_blank" class="px-8 py-4 bg-[#25D366] hover:bg-[#128C7E] text-white rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-lg shadow-[#25D366]/30 flex items-center justify-center gap-2">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                    <a href="https://wa.me/60182369616?text=Hi%20Nexora%20Solutions,%20I'm%20interested%20in%20building%20a%20website%20for%20my%20business." target="_blank" class="w-full sm:w-[280px] px-8 py-4 bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-lg shadow-[#25D366]/30 flex items-center justify-center gap-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
                         Chat on WhatsApp
                     </a>
 
-                    <!-- Secondary Email Button -->
-                    <a href="mailto:nexorasolutionsdev@gmail.com" class="px-8 py-4 bg-slate-800 hover:bg-slate-700 text-white rounded-full font-bold text-lg transition-all transform hover:scale-105 border border-slate-700 flex items-center justify-center gap-2">
+                    <!-- Email Button -->
+                    <a href="mailto:nexorasolutionsdev@gmail.com" class="w-full sm:w-[280px] px-8 py-4 bg-slate-800 hover:bg-slate-700 text-white rounded-full font-bold text-lg transition-all transform hover:scale-105 border border-slate-700 flex items-center justify-center gap-3 shadow-lg">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                        Email Us
+                        Send an Email
                     </a>
                 </div>
-                <p class="mt-8 text-slate-400 text-sm font-medium tracking-wide">
-                    Or reach out directly: +6018-236-9616 &nbsp;|&nbsp; nexorasolutionsdev@gmail.com
-                </p>
+                
+                <p class="mt-8 text-slate-400 text-sm">Or call us at +6018-236 9616 for a free consultation.</p>
             </div>
         </div>
     </section>
@@ -198,15 +251,13 @@
                 <img src="logocropped.png" alt="Nexora Solutions Logo" class="h-10 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300">
             </div>
             
-            <div class="text-slate-500 text-sm">
-                &copy; 2026 Nexora Solutions. Designed and developed by Nexora Solutions. All rights reserved.
+            <div class="text-slate-500 text-sm font-medium">
+                &copy; 2026 Nexora Solutions. Designed and developed by Nexora Solutions Dev. All rights reserved.
             </div>
             
-            <div class="flex gap-4">
-                <!-- GitHub Icon -->
-                <a href="https://github.com/nexorasolutions-dev" target="_blank" class="text-slate-400 hover:text-slate-900 transition-colors">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path></svg>
-                </a>
+            <!-- Footer Social Links -->
+            <div class="flex gap-5">
+             
             </div>
         </div>
     </footer>
@@ -227,4 +278,5 @@
         });
     </script>
 </body>
+</html>
 </html>
